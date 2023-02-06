@@ -8,6 +8,76 @@
   </head>
   <body>
     <!-- Write your html markup bellow this comment -->
+    <div class="container">
+      <header class="header">
+        <img class="logo" alt="logo" src="/vite.svg"/>
+        <span>SOLVIT CHALLENGES</span>
+      </header>
+      <div class="content">
+        <div class="boxes">
+          <div class="box">
+            <h3>Challenge 1</h3>
+            <p>a JavaScript function that takes in a string and returns the string with all vowels removed.</p>
+            <form action="" method="post" class="removeVowelsform">
+              <div class="input-group">
+                <label>Enter String</label>
+                <input type="text" name="string" class="string" required/>
+              </div>
+              <div class="input-group">
+                <button type="submit" name="removeVowels">Remove all vowels</button>
+              </div>
+              <div style="display: flex; margin: 10px auto;">
+                <span>Output:</span>
+                <span class="feedback-text"></span>
+              </div>
+            </form>
+          </div>
+          <div class="box">
+            <h3>Challenge 2</h3>
+            <p>a JavaScript function that takes in an array of numbers and returns the sum of all the numbers in the array</p>
+            <div class="input-group">
+              <input type="number" name="arrayLenght" class="lenght" min='2' placeholder="Array lenght" required/>
+            </div>
+            <form action="" method="post" class="addArrayform">
+              <div class="input-group">
+                <label>Enter Array elements</label>
+                <div class="elements">
+
+                </div>
+              </div>
+              <div class="input-group">
+                <button type="submit">Find sum</button>
+              </div>
+              <div style="display: flex; margin: 10px auto;">
+                <span>Output:</span>
+                <span class="sum"></span>
+              </div>
+            </form>
+          </div>
+          <div class="box">
+            <h3>Challenge 3</h3>
+            <p>a simple form that includes two text inputs and a submit button to calculates the sum of two numbers.</p>
+            <form action="" method="post" class="addNumbers">
+              <div class="input-group">
+                <label>Enter any two numbers</label>
+                <div class="elements">
+                  <input type="number" name="string" class="number1" step=0.00001 placeholder="Enter first number" required/>
+                  <p style="text-align: center;">+</p>
+                  <input type="number" name="string" class="number2" step=0.00001 placeholder="Enter second number" required/>
+                </div>
+              </div>
+              <div class="input-group">
+                <button type="submit" name="addInputs">Add</button>
+              </div>
+              <div style="display: flex; margin: 10px auto;">
+                <span>Output:</span>
+                <span class="result"></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Write your html markup above this comment -->
     <script type="module" src="/main.js"></script>
